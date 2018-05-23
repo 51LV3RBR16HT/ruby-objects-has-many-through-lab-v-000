@@ -26,16 +26,10 @@ class Patient
   end
 
   def doctors
-  @appointments.collect do |appt|
-    appt.doctor
+    self.appointments.collect do |appt|
+      # binding.pry
+      appt.doctor 
+    end
   end
-end
-
-  # def doctors
-  #   self.appointments.collect do |appt|
-  #     # binding.pry
-  #     appt.
-  #   end
-  # end
 
 end
